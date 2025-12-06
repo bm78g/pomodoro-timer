@@ -56,11 +56,10 @@ export default function App() {
   let maxTime = working ? workTime : breakTime
   let progress = maxTime - seconds
 
-  // Commented temporarily because the control buttons are removed.
   const modifyWorkTime = (diff: number) => {
     const newWorkTime = Math.max(0, workTime + diff)
     setWorkTime(newWorkTime)
-    if (workingRef.current)
+    if (workingRef.current && !runningRef.current)
       setSeconds(newWorkTime)
     progress = newWorkTime - secondsRef.current
   }
@@ -68,7 +67,7 @@ export default function App() {
   const modifyBreakTime = (diff: number) => {
     const newBreakTime = Math.max(0, breakTime + diff)
     setBreakTime(newBreakTime)
-    if (!workingRef.current)
+    if (!workingRef.current && !runningRef.current)
       setSeconds(newBreakTime)
     progress = newBreakTime - secondsRef.current
   }
@@ -108,10 +107,10 @@ export default function App() {
       )}
       <div className='header-block'>
         <img id='logo' src={pomodoroLogo} onClick={() => window.location.reload()}></img>
-        <OptionsButton onClick={() => toggleOptions(true)}/>
       </div>
       <div className='hero-block'>
         <div className='hero-content'>
+          <OptionsButton onClick={() => toggleOptions(true)}/>
           <p className='decor-text p-1'>working hard...?</p>
           <h1 className='title-text'>Pomodoro Timer</h1>
           <TimerDisplay hours={hours} minutes={minutes} seconds={secondsFormat}/>
