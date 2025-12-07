@@ -13,7 +13,7 @@ import TimerDisplay from './components/TimerDisplay/TimerDisplay'
 import ControlButton from './components/ControlButton/ControlButton'
 
 // Hooks
-import { usePomodoroTimer } from './hooks/pomodoroTimer'
+import { usePomodoroTimer } from './hooks/usePomodoroTimer'
 
 export default function App() {
   const {
@@ -31,17 +31,17 @@ export default function App() {
   } = usePomodoroTimer()
 
   const [showOptions, setShowOptions] = useState(false)
+  const toggleOptions = (enable: boolean) => {
+    setShowOptions(enable)
+  }
 
   let minutes = Math.floor(seconds / 60) % 60
   let hours = Math.floor(seconds / 3600)
   let secondsFormat = seconds % 60
   
+  // Progress display purpose.
   let maxTime = working ? workTime : breakTime
   let progress = maxTime - seconds
-
-  const toggleOptions = (enable: boolean) => {
-    setShowOptions(enable)
-  }
 
   return (
     <>

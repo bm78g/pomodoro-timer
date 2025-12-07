@@ -1,3 +1,5 @@
+// Container of all option components.
+
 interface OptionsPanelProps {
     workTime: number,
     breakTime: number,

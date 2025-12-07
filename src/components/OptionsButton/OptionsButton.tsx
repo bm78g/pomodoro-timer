@@ -1,3 +1,5 @@
+// Button for opening the options panel.
+
 import optionsLogo from '../../assets/images/options_logo.png'
 
 interface OptionsButtonProps {

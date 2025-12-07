@@ -1,3 +1,5 @@
+// Button for start/stop/resetting the timer.
+
 interface ControlButtonProps {
     label: string,
     onClick: () => void

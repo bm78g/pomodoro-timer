@@ -1,3 +1,5 @@
+// Text that displays the timer in format.
+
 interface TimerInterface {
     seconds: number,
     minutes: number,
