@@ -15,6 +15,24 @@ body {
   margin: 0px;
 }
 
+.options-block {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(10, 10, 10, 0.4);
+    z-index: 999;
+}
+
 .header-block {
   margin-bottom: 50px;
 
@@ -37,20 +55,7 @@ body {
   left: 0;
   margin-left: 20%;
 }
-
 #logo:hover {
-  cursor: pointer;
-}
-
-#options-btn {
-  position: absolute;
-  transform: translate(540px, -295px);
-
-  width: 50px;
-  height: 50px;
-}
-
-#options-btn:hover {
   cursor: pointer;
 }
 
@@ -94,30 +99,6 @@ body {
   color: rgb(54, 54, 54);
 }
 
-#timer-display {
-  margin: 10px;
-  padding: 0px;
-
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 128px;
-  font-weight: 400;
-
-  color: rgb(54, 54, 54);
-}
-
-.control-btn {
-  width: 100px;
-  height: 30px;
-  margin-right: 10px;
-  margin-left: 10px;
-
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
 .hero-content > input {
 
   outline: none;
@@ -138,33 +119,4 @@ input[type="range"] {
 
 button {
   margin: 5px;
-}
-
-.options-block {
-    position: fixed;
-    margin: 0px;
-    padding: 0px;
-    top: 0;
-
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    background-color: rgba(10, 10, 10, 0.4);
-    z-index: 999;
-}
-
-.options-panel {
-    width: 500px;
-    height: 750px;
-
-    background-color: rgba(224, 224, 224, .9);
-
-    border-radius: 1%;
-    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25));
-    z-index: 1000;
 }

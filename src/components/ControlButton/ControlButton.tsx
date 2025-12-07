@@ -1,5 +1,7 @@
 // Button for start/stop/resetting the timer.
 
+import './ControlButton.css'
+
 interface ControlButtonProps {
     label: string,
     onClick: () => void

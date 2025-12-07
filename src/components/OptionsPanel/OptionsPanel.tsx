@@ -1,5 +1,7 @@
 // Container of all option components.
 
+import './OptionsPanel.css'
+
 interface OptionsPanelProps {
     workTime: number,
     breakTime: number,

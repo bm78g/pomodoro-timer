@@ -1,0 +1,10 @@
+.options-panel {
+    width: 500px;
+    height: 750px;
+
+    background-color: rgba(224, 224, 224, .9);
+
+    border-radius: 1%;
+    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25));
+    z-index: 1000;
+}

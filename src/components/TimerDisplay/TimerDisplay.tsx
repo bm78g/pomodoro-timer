@@ -1,5 +1,7 @@
 // Text that displays the timer in format.
 
+import './TimerDisplay.css'
+
 interface TimerInterface {
     seconds: number,
     minutes: number,
