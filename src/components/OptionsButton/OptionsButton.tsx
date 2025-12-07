@@ -1,4 +1,7 @@
-import optionsLogo from '../assets/options_logo.png'
+// Button for opening the options panel.
+
+import './OptionsButton.css'
+import optionsLogo from '../../assets/images/options_logo.png'
 
 interface OptionsButtonProps {
     onClick: () => void
