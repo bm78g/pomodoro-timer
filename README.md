@@ -24,7 +24,7 @@ npm run dev
 
 ## Project Structure
 
-```css
+```
 src/
   assets/
     images/
