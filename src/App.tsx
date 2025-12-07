@@ -7,13 +7,13 @@ import './App.css'
 import pomodoroLogo from './assets/images/pomodoro_logo.png'
 
 // Components
-import OptionsPanel from './components/OptionsPanel/OptionsPanel'
-import OptionsButton from './components/OptionsButton/OptionsButton'
-import TimerDisplay from './components/TimerDisplay/TimerDisplay'
-import ControlButton from './components/ControlButton/ControlButton'
+import OptionsPanel from './components/OptionsPanel/OptionsPanel.tsx'
+import OptionsButton from './components/OptionsButton/OptionsButton.tsx'
+import TimerDisplay from './components/TimerDisplay/TimerDisplay.tsx'
+import ControlButton from './components/ControlButton/ControlButton.tsx'
 
 // Hooks
-import { usePomodoroTimer } from './hooks/usePomodoroTimer'
+import { usePomodoroTimer } from './hooks/usePomodoroTimer.ts'
 
 export default function App() {
   const {
@@ -25,7 +25,7 @@ export default function App() {
     start,
     stop,
     reset,
-    setSecondsToOne,
+    //setSecondsToOne,
     modifyWork,
     modifyBreak
   } = usePomodoroTimer()
@@ -73,7 +73,7 @@ export default function App() {
             <ControlButton label='Start' onClick={start} />
             <ControlButton label='Stop' onClick={stop} />
             <ControlButton label='Reset' onClick={reset} />
-            <ControlButton label='debug: set sec to 1' onClick={setSecondsToOne} />
+            {/*<ControlButton label='debug: set sec to 1' onClick={setSecondsToOne} />*/}
           </div>
 
           <input
