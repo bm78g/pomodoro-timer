@@ -1,6 +1,6 @@
 # Pomodoro Timer
 
-A minimalistic and modern Pomodoro timer built with React.
+A minimalistic and modern Pomodoro timer built with React.  
 https://bm78g.github.io/pomodoro-timer/
 
 ## Features
