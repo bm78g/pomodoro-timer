@@ -8,5 +8,5 @@ interface OptionsButtonProps {
 }
 
 export default function OptionsButton({onClick}: OptionsButtonProps) {
-    return <img id="options-btn" src={optionsLogo} onClick={onClick}></img>
+    return <img id="options-btn" src={ optionsLogo } onClick={onClick}></img>
 }

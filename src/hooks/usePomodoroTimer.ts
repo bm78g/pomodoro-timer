@@ -68,8 +68,14 @@ export function usePomodoroTimer() {
         return () => clearInterval(intervalId)
     }, [])
 
-    const start = () => setRunning(true)
-    const stop = () => setRunning(false)
+    const start = () => {
+        setRunning(true)
+        console.log('start')
+    }
+    const stop = () => {
+        setRunning(false)
+        throw new Error('Non-blocking error')
+    }
     const reset = () => {
         setSeconds(workingRef.current ? workTimeRef.current : breakTimeRef.current)
         setRunning(false)   

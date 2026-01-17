@@ -9,6 +9,6 @@ interface ControlButtonProps {
 
 export default function ControlButton({label, onClick}: ControlButtonProps) {
     return (
-        <button className="control-btn" onClick={onClick}>{label}</button>
+        <button className="control-btn" onClick={ onClick }>{label}</button>
     )
 }

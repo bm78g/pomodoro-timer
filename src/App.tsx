@@ -48,16 +48,16 @@ export default function App() {
       {showOptions && (
         <div className='options-block' onClick={() => setShowOptions(false)}>
           <OptionsPanel
-            workTime={workTime}
-            breakTime={breakTime}
-            modifyBreakTime={modifyBreak}
-            modifyWorkTime={modifyWork}
+            workTime={ workTime }
+            breakTime={ breakTime }
+            modifyBreakTime={ modifyBreak }
+            modifyWorkTime={ modifyWork }
           />
         </div>
       )}
 
       <div className='header-block'>
-        <img id='logo' src={pomodoroLogo} onClick={() => window.location.reload()}></img>
+        <img id='logo' src={ pomodoroLogo } onClick={() => window.location.reload()}></img>
       </div>
 
       <div className='hero-block'>
@@ -67,7 +67,7 @@ export default function App() {
           <p className='decor-text p-1'>working hard...?</p>
           <h1 className='title-text'>Pomodoro Timer</h1>
 
-          <TimerDisplay hours={hours} minutes={minutes} seconds={secondsFormat}/>
+          <TimerDisplay hours={ hours } minutes={ minutes } seconds={ secondsFormat }/>
 
           <div className='control-btn-container'>
             <ControlButton label='Start' onClick={start} />
@@ -79,8 +79,8 @@ export default function App() {
           <input
             type="range"
             min="0"
-            max={maxTime}
-            value={progress}
+            max={ maxTime }
+            value={ progress }
             readOnly
             style={{ width: "300px" }}
           />
