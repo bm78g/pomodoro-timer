@@ -14,6 +14,7 @@ import ControlButton from './components/ControlButton/ControlButton.tsx'
 
 // Hooks
 import { usePomodoroTimer } from './hooks/usePomodoroTimer.ts'
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react'
 
 export default function App() {
   const {
@@ -58,6 +59,12 @@ export default function App() {
 
       <div className='header-block'>
         <img id='logo' src={ pomodoroLogo } onClick={() => window.location.reload()}></img>
+        <SignedOut>
+          <SignInButton />
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
       </div>
 
       <div className='hero-block'>
