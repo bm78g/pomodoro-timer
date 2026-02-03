@@ -83,7 +83,6 @@ export default function App() {
             max={ maxTime }
             value={ progress }
             readOnly
-            style={{ width: "300px" }}
           />
             
           <p className={styles.decorText + ' ' + styles.p2}>or hardly working?</p>
