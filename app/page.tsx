@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 // Stylesheets
-import './App.css'
+import styles from './app.module.css'
 
 // Assets
 import pomodoroLogo from '../public/images/pomodoro_logo.png'
@@ -48,7 +48,7 @@ export default function App() {
   return (
     <>
       {showOptions && (
-        <div className='options-block' onClick={() => setShowOptions(false)}>
+        <div className={styles.optionsBlock} onClick={() => setShowOptions(false)}>
           <OptionsPanel
             workTime={ workTime }
             breakTime={ breakTime }
@@ -58,20 +58,19 @@ export default function App() {
         </div>
       )}
 
-      <div className='header-block'>
-        <img id='logo' src={ pomodoroLogo.src } onClick={() => window.location.reload()}></img>
+      <div className={styles.headerBlock}>
+        <img className={styles.logo} src={ pomodoroLogo.src } onClick={() => window.location.reload()}></img>
       </div>
 
-      <div className='hero-block'>
-        <div className='hero-content'>
+      <div className={styles.heroBlock}>
+        <div className={styles.heroContent}>
           <OptionsButton onClick={() => toggleOptions(true)}/>
 
-          <p className='decor-text p-1'>working hard...?</p>
-          <h1 className='title-text'>Pomodoro Timer</h1>
-
+          <p className={styles.decorText + ' ' + styles.p1}>working hard...?</p>
+          <h1 className={styles.titleText}>Pomodoro Timer</h1>
           <TimerDisplay hours={ hours } minutes={ minutes } seconds={ secondsFormat }/>
 
-          <div className='control-btn-container'>
+          <div>
             <ControlButton label='Start' onClick={start} />
             <ControlButton label='Stop' onClick={stop} />
             <ControlButton label='Reset' onClick={reset} />
@@ -79,7 +78,7 @@ export default function App() {
             {/*<ControlButton label='debug: set sec to 1' onClick={setSecondsToOne} />*/}
           </div>
 
-          <input
+          <input className={styles.progressBar}
             type="range"
             min="0"
             max={ maxTime }
@@ -88,7 +87,7 @@ export default function App() {
             style={{ width: "300px" }}
           />
             
-          <p className='decor-text p-2'>or hardly working?</p>
+          <p className={styles.decorText + ' ' + styles.p2}>or hardly working?</p>
         </div>
       </div>
     </>
