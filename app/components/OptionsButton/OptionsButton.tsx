@@ -1,6 +1,6 @@
 // Button for opening the options panel.
 
-import './OptionsButton.css'
+import styles from './OptionsButton.module.css'
 import optionsLogo from '../../../public/images/options_logo.png'
 
 interface OptionsButtonProps {
@@ -8,5 +8,5 @@ interface OptionsButtonProps {
 }
 
 export default function OptionsButton({onClick}: OptionsButtonProps) {
-    return <img id="options-btn" src={ optionsLogo.src } onClick={onClick}></img>
+    return <img className={styles.optionsBtn} src={ optionsLogo.src } onClick={onClick}></img>
 }

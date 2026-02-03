@@ -1,4 +1,4 @@
-#options-btn {
+.optionsBtn {
   position: absolute;
   transform: translate(540px, -295px);
 
@@ -6,6 +6,6 @@
   height: 50px;
 }
 
-#options-btn:hover {
+.optionsBtn:hover {
   cursor: pointer;
 }

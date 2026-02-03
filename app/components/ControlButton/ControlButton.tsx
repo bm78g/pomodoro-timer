@@ -1,6 +1,6 @@
 // Button for start/stop/resetting the timer.
 
-import './ControlButton.css'
+import styles from './ControlButton.module.css'
 
 interface ControlButtonProps {
     label: string,
@@ -9,6 +9,6 @@ interface ControlButtonProps {
 
 export default function ControlButton({label, onClick}: ControlButtonProps) {
     return (
-        <button className="control-btn" onClick={ onClick }>{label}</button>
+        <button className={styles.controlBtn} onClick={ onClick }>{label}</button>
     )
 }
