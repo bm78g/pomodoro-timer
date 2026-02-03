@@ -1,0 +1,11 @@
+.optionsBtn {
+  position: absolute;
+  transform: translate(26.5rem, -14.5rem);
+
+  width: 50px;
+  height: 50px;
+}
+
+.optionsBtn:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,12 @@
+.controlBtn {
+  width: 5.5rem;
+  height: 1.6rem;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
