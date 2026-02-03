@@ -4,35 +4,41 @@ body {
   margin: 0px;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .optionsBlock {
-    position: fixed;
-    margin: 0px;
-    padding: 0px;
-    top: 0;
+  position: fixed;
+  margin: 0px;
+  padding: 0px;
+  top: 0;
 
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
-    background-color: rgba(10, 10, 10, 0.4);
-    z-index: 999;
+  background-color: rgba(10, 10, 10, 0.4);
+  z-index: 999;
 }
 
 .headerBlock {
   margin-bottom: 50px;
 
-  width: 100vw;
+  width: 500%;
   height: 80px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  border: 2px solid rgb(200, 200, 200);
+  border-bottom: 2px solid rgb(200, 200, 200);
   background-color: #e0e0e0;
 }
 
@@ -43,6 +49,7 @@ body {
   position: absolute;
   left: 0;
   margin-left: 20%;
+  margin-top: 1%;
 }
 .logo:hover {
   cursor: pointer;
@@ -55,8 +62,8 @@ body {
 }
 
 .heroContent {
-  width: 1200px;
-  height: 700px;
+  width: 60rem;
+  height: 35rem;
 
   border: 2px solid rgb(180, 180, 180);
 
@@ -66,36 +73,29 @@ body {
   align-items: center;
 }
 
-.heroContent > * {
-  transform: translateY(-50px);
-}
-
 .heroContent > p {
   font-family: "Shadows Into Light", cursive;
-  font-size: 22px;
+  font-size: 1.35rem;
 }
 
 .decorText.p1 {
-  transform: translate(-500px, -85px);
+  transform: translate(-24rem, -2rem);
 }
 
 .decorText.p2 {
-  transform: translate(480px, 80px);
+  transform: translate(23rem, 2rem);
 }
 
 .titleText {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 24px;
+  font-size: 1.3rem;
 
-  margin: 10px;
   margin-top: 20px;
-  transform: translate(0px, -10px);
 
   color: rgb(54, 54, 54);
 }
 
 .heroContent > input {
-
   outline: none;
 }
 

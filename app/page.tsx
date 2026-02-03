@@ -46,7 +46,7 @@ export default function App() {
   let progress = maxTime - seconds
 
   return (
-    <>
+    <div className={styles.app}>
       {showOptions && (
         <div className={styles.optionsBlock} onClick={() => setShowOptions(false)}>
           <OptionsPanel
@@ -74,8 +74,7 @@ export default function App() {
             <ControlButton label='Start' onClick={start} />
             <ControlButton label='Stop' onClick={stop} />
             <ControlButton label='Reset' onClick={reset} />
-            <ControlButton label='Set 1' onClick={setSecondsToOne} />
-            {/*<ControlButton label='debug: set sec to 1' onClick={setSecondsToOne} />*/}
+            {/* <ControlButton label='Set 1' onClick={setSecondsToOne} /> */}
           </div>
 
           <input className={styles.progressBar}
@@ -90,6 +89,6 @@ export default function App() {
           <p className={styles.decorText + ' ' + styles.p2}>or hardly working?</p>
         </div>
       </div>
-    </>
+    </div>
   )
 }
