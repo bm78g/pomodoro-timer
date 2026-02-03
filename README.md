@@ -1,7 +1,6 @@
 # Pomodoro Timer
 
-A minimalistic and modern Pomodoro timer built with React.  
-https://bm78g.github.io/pomodoro-timer/
+A minimalistic and modern Pomodoro timer built with Next.js.
 
 ## Features
 
@@ -11,8 +10,7 @@ https://bm78g.github.io/pomodoro-timer/
 
 ## Tech Stack
 
-- React + Vite
-- TypeScript
+- Next.js, TypeScript
 
 ## Installation
 
@@ -26,10 +24,7 @@ npm run dev
 ## Project Structure
 
 ```
-src/
-  assets/
-    images/
-    sounds/
+app/
   components/
     ControlButton/
     OptionsButton/
@@ -37,8 +32,10 @@ src/
     TimerDisplay/
   hooks/
     usePomodoroTimer.ts
-  App.css
-  App.tsx
-  index.css
-  main.tsx
+  app.module.css
+  globals.css
+  layout.tsx
+  page.tsx
+public/
+  ...
 ```
