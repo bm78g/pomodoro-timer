@@ -1,21 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Space+Grotesk:wght@300..700&display=swap');
 
-#root {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-}
-
 body {
   margin: 0px;
 }
 
-.options-block {
+.optionsBlock {
     position: fixed;
     margin: 0px;
     padding: 0px;
@@ -33,7 +22,7 @@ body {
     z-index: 999;
 }
 
-.header-block {
+.headerBlock {
   margin-bottom: 50px;
 
   width: 100vw;
@@ -47,7 +36,7 @@ body {
   background-color: #e0e0e0;
 }
 
-#logo {
+.logo {
   width: 75px;
   height: 75px;
 
@@ -55,17 +44,17 @@ body {
   left: 0;
   margin-left: 20%;
 }
-#logo:hover {
+.logo:hover {
   cursor: pointer;
 }
 
-.hero-block {
+.heroBlock {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.hero-content {
+.heroContent {
   width: 1200px;
   height: 700px;
 
@@ -77,24 +66,24 @@ body {
   align-items: center;
 }
 
-.hero-content > * {
+.heroContent > * {
   transform: translateY(-50px);
 }
 
-.hero-content > p {
+.heroContent > p {
   font-family: "Shadows Into Light", cursive;
   font-size: 22px;
 }
 
-.decor-text.p-1 {
+.decorText.p1 {
   transform: translate(-500px, -85px);
 }
 
-.decor-text.p-2 {
+.decorText.p2 {
   transform: translate(480px, 80px);
 }
 
-.title-text {
+.titleText {
   font-family: "Space Grotesk", sans-serif;
   font-size: 24px;
 
@@ -105,12 +94,12 @@ body {
   color: rgb(54, 54, 54);
 }
 
-.hero-content > input {
+.heroContent > input {
 
   outline: none;
 }
 
-input[type="range"] {
+.progressBar[type="range"] {
   -webkit-appearance: none;
   appearance: none;
   outline: none;
@@ -121,8 +110,4 @@ input[type="range"] {
   height: 8px;
   background: rgb(200, 200, 200);
   border-radius: 10px;
-}
-
-button {
-  margin: 5px;
 }
