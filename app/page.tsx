@@ -9,10 +9,10 @@ import styles from './app.module.css'
 import pomodoroLogo from '../public/images/pomodoro_logo.png'
 
 // Components
-import OptionsPanel from './components/OptionsPanel/OptionsPanel'
-import OptionsButton from './components/OptionsButton/OptionsButton'
-import TimerDisplay from './components/TimerDisplay/TimerDisplay'
-import ControlButton from './components/ControlButton/ControlButton'
+import OptionsPanel from './ui/OptionsPanel/OptionsPanel'
+import OptionsButton from './ui/OptionsButton/OptionsButton'
+import TimerDisplay from './ui/TimerDisplay/TimerDisplay'
+import ControlButton from './ui/ControlButton/ControlButton'
 
 // Hooks
 import { usePomodoroTimer } from './hooks/usePomodoroTimer'
