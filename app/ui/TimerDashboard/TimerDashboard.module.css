@@ -8,7 +8,7 @@
   height: 100vh;
 }
 
-.optionsBlock {
+.panelOverlay {
   position: fixed;
   margin: 0px;
   padding: 0px;
@@ -44,10 +44,19 @@
   width: 4.5rem;
   height: 4.5rem;
 
-  transform: translate(-26rem, 0.5rem);
+  transform: translate(-21rem, 0.5rem);
 }
 .logo:hover {
   cursor: pointer;
+}
+
+.authButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  transform: translate(21rem, 0.3rem);
 }
 
 .heroBlock {
