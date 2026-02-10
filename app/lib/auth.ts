@@ -2,10 +2,13 @@
 
 import { betterAuth } from "better-auth";
 import { nextCookies } from "better-auth/next-js";
-import Database from "better-sqlite3";
+import { Pool } from "pg";
 
 export const auth = betterAuth({
-    database: new Database("./sqlite.db"),
+    database: new Pool({
+        connectionString: process.env.DATABASE_URL,
+        ssl: { rejectUnauthorized: false }
+    }),
     emailAndPassword: { 
         enabled: true, 
     },
