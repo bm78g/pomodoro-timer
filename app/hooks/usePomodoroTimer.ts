@@ -1,5 +1,7 @@
 // Hook for the pomodoro timer logic.
 
+'use client';
+
 import { useState, useRef, useEffect } from 'react'
 
 export function usePomodoroTimer() {
