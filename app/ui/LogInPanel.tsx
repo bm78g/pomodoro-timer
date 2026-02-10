@@ -10,7 +10,10 @@ export default function SignUpPanel() {
             <form action={signInAction} className="flex flex-col items-center gap-2">
                 <input type="email" name="email" placeholder="Email" required className={fieldStyle}></input>
                 <input type="password" name="password" placeholder="Password" required className={fieldStyle}></input>
-                <button type="submit" className="w-25 h-9 rounded-md bg-transparent border-2 border-gray-400/50 text-gray-600">Log In</button>
+                <button type="submit"
+                    className="w-25 h-9 rounded-md bg-transparent border-2 border-gray-400/50 text-gray-600 hover:bg-gray-500/10">
+                        Log In
+                </button>
             </form>
         </div>
     )

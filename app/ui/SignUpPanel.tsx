@@ -11,7 +11,10 @@ export default function SignUpPanel() {
                 <input type="text" name="name" placeholder="Name" required className={fieldStyle}></input>
                 <input type="email" name="email" placeholder="Email" required className={fieldStyle}></input>
                 <input type="password" name="password" placeholder="Password" required className={fieldStyle}></input>
-                <button type="submit" className="w-25 h-9 rounded-md bg-transparent border-2 border-gray-400/50 text-gray-600">Sign Up</button>
+                <button type="submit"
+                    className="w-25 h-9 rounded-md bg-transparent border-2 border-gray-400/50 text-gray-600 hover:bg-gray-500/10">
+                        Sign Up
+                </button>
             </form>
         </div>
     )
